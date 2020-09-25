@@ -1,0 +1,49 @@
+{
+    "routes": [
+      {
+        "route": "/profile",
+        "allowedRoles": ["authenticated"]
+      },
+      {
+        "route": "/admin/*",
+        "allowedRoles": ["administrator"]
+      },
+      {
+        "route": "/api/admin",
+        "allowedRoles": ["administrator"]
+      },
+      {
+        "route": "/customers/demo_customer",
+        "allowedRoles": ["administrator", "demo_customer"]
+      },
+      {
+        "route": "/login",
+        "serve": "/.auth/login/github"
+      },
+      {
+        "route": "/.auth/login/twitter",
+        "statusCode": "404"
+      },
+      {
+        "route": "/logout",
+        "serve": "/.auth/logout"
+      }
+    ],
+    "platformErrorOverrides": [
+      {
+        "errorType": "NotFound",
+        "serve": "/custom-404.html"
+      },
+      {
+        "errorType": "Unauthenticated",
+        "statusCode": "302",
+        "serve": "/login"
+      }
+    ],
+    "defaultHeaders": {
+      "content-security-policy": "default-src https: 'unsafe-eval' 'unsafe-inline'; object-src 'none'"
+    },
+    "mimeTypes": {
+        "custom": "text/html"
+    }
+  }
