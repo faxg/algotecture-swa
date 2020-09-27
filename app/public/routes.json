@@ -1,7 +1,16 @@
 {
     "routes": [
       {
+        "route": "/login",
+        "serve": "/login.html"
+      },
+      {
+        "route": "/logout",
+        "serve": "/.auth/logout"
+      },
+      {
         "route": "/profile",
+        "serve": "/profile.html",
         "allowedRoles": ["authenticated"]
       },
       {
@@ -9,30 +18,22 @@
         "allowedRoles": ["administrator"]
       },
       {
-        "route": "/api/admin",
-        "allowedRoles": ["administrator"]
+        "route": "/api/*",
+        "allowedRoles": ["authenticated"]
       },
       {
         "route": "/customers/demo_customer",
-        "allowedRoles": ["administrator", "demo_customer"]
-      },
-      {
-        "route": "/login",
-        "serve": "/.auth/login/github"
+        "allowedRoles": ["authenticated", "demo_customer"]
       },
       {
         "route": "/.auth/login/twitter",
         "statusCode": "404"
-      },
-      {
-        "route": "/logout",
-        "serve": "/.auth/logout"
       }
     ],
     "platformErrorOverrides": [
       {
         "errorType": "NotFound",
-        "serve": "/custom-404.html"
+        "serve": "/404-not-found.html"
       },
       {
         "errorType": "Unauthenticated",
