@@ -1,16 +1,11 @@
 {
     "routes": [
       {
-        "route": "/login",
-        "serve": "/login.html"
-      },
-      {
         "route": "/logout",
         "serve": "/.auth/logout"
       },
       {
         "route": "/profile",
-        "serve": "/profile.html",
         "allowedRoles": ["authenticated"]
       },
       {
