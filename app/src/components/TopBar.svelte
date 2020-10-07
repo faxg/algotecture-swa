@@ -4,9 +4,18 @@
   export let brandName = "Algotecture";
 </script>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<style>
+  .logo-img {
+    max-height: 32px;
+  }
+</style>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light p-1">
   <div class="container">
-    <a class="navbar-brand" href="/home"><img src="/img/logo.png" alt=""> {brandName}</a>
+    <a class="navbar-brand" href="/home">
+      <img src="/img/logo.png" class="logo-img" alt="Logo" />
+      {brandName}
+    </a>
     <button
       class="navbar-toggler"
       type="button"
@@ -18,9 +27,9 @@
       <span class="navbar-toggler-icon" />
     </button>
 
-{#if userInfo}
-    <!-- Top right menu when user is logged in-->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    {#if userInfo}
+      <!-- Top right menu when user is logged in-->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item dropdown">
           <a
@@ -44,36 +53,32 @@
         </li>
       </ul>
     </div>
-{:else}
-    <!-- Top right menu when user is NOT logged in-->
+    {:else}
+      <!-- Top right menu when user is NOT logged in-->
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
                 <span class="align-text-bottom">Login with: </span>
+                <a href="/.auth/login/github" class="btn btn-floating btn-sm btn-secondary" alt="Login with Github">
+                  <i class="fab fa-github-square fa-2x" aria-hidden="true"></i>
+              </a>
 
-                <button type="button" class="btn btn-floating btn-sm btn-secondary" alt="Login with Twitter">
+                <a href="/.auth/login/twitter" class="btn btn-floating btn-sm btn-secondary" alt="Login with Twitter">
                     <i class="fab fa-twitter-square fa-2x" aria-hidden="true"></i>
-                </button>
+                </a>
 
-                <button type="button" class="btn btn-floating btn-sm btn-secondary" alt="Login with Github">
-                    <i class="fab fa-github-square fa-2x" aria-hidden="true"></i>
-                </button>
-                <button type="button" class="btn btn-floating btn-sm btn-secondary" alt="Login with LinkedIn">
-                    <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
-                </button>
 
-                <button type="button" class="btn btn-floating btn-sm btn-secondary" alt="Login with Google">
+                <a href="/.auth/login/google" class="btn btn-floating btn-sm btn-secondary" alt="Login with Google">
                     <i class="fab fa-google fa-2x" aria-hidden="true"></i>
-                </button>
-                <button type="button" class="btn btn-floating btn-sm btn-secondary" alt="Login with Facebook">
+                </a>
+                <a href="/.auth/login/facebook" class="btn btn-floating btn-sm btn-secondary" alt="Login with Facebook">
                     <i class="fab fa-facebook fa-2x" aria-hidden="true"></i>
-                </button>
+                </a>
 
             </li>
         </ul>
     </div>
-{/if}
-
+    {/if}
   </div>
 </nav>

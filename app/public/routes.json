@@ -23,6 +23,11 @@
       {
         "route": "/.auth/login/twitter",
         "statusCode": "404"
+      },
+      {
+        "route": "/*",
+        "serve": "/home",
+        "statusCode": 200
       }
     ],
     "platformErrorOverrides": [

@@ -4,8 +4,8 @@
 
 
 <div class="row">
-  <div class="col-12">
+  <div class="col-12 d-flex justify-content-center">
       <img src="img/dummy-frontpage.png" 
-      class="img-fluid w-100" alt="">
+      class="img-fluid"  alt="">
   </div>
 </div>    

@@ -2060,10 +2060,10 @@
     			div0 = element("div");
     			img = element("img");
     			if (img.src !== (img_src_value = "img/dummy-frontpage.png")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "class", "img-fluid w-100");
+    			attr_dev(img, "class", "img-fluid");
     			attr_dev(img, "alt", "");
-    			add_location(img, file$1, 7, 6, 135);
-    			attr_dev(div0, "class", "col-12");
+    			add_location(img, file$1, 7, 6, 165);
+    			attr_dev(div0, "class", "col-12 d-flex justify-content-center");
     			add_location(div0, file$1, 6, 2, 107);
     			attr_dev(div1, "class", "row");
     			add_location(div1, file$1, 5, 0, 86);
@@ -2531,27 +2531,24 @@
 
     const file$4 = "src\\components\\TopBar.svelte";
 
-    // (47:0) {:else}
+    // (56:4) {:else}
     function create_else_block$1(ctx) {
     	let div;
     	let ul;
     	let li;
     	let span;
     	let t1;
-    	let button0;
+    	let a0;
     	let i0;
     	let t2;
-    	let button1;
+    	let a1;
     	let i1;
     	let t3;
-    	let button2;
+    	let a2;
     	let i2;
     	let t4;
-    	let button3;
+    	let a3;
     	let i3;
-    	let t5;
-    	let button4;
-    	let i4;
 
     	const block = {
     		c: function create() {
@@ -2561,64 +2558,54 @@
     			span = element("span");
     			span.textContent = "Login with:";
     			t1 = space();
-    			button0 = element("button");
+    			a0 = element("a");
     			i0 = element("i");
     			t2 = space();
-    			button1 = element("button");
+    			a1 = element("a");
     			i1 = element("i");
     			t3 = space();
-    			button2 = element("button");
+    			a2 = element("a");
     			i2 = element("i");
     			t4 = space();
-    			button3 = element("button");
+    			a3 = element("a");
     			i3 = element("i");
-    			t5 = space();
-    			button4 = element("button");
-    			i4 = element("i");
     			attr_dev(span, "class", "align-text-bottom");
-    			add_location(span, file$4, 52, 16, 1954);
-    			attr_dev(i0, "class", "fab fa-twitter-square fa-2x");
+    			add_location(span, file$4, 61, 16, 2082);
+    			attr_dev(i0, "class", "fab fa-github-square fa-2x");
     			attr_dev(i0, "aria-hidden", "true");
-    			add_location(i0, file$4, 55, 20, 2140);
-    			attr_dev(button0, "type", "button");
-    			attr_dev(button0, "class", "btn btn-floating btn-sm btn-secondary");
-    			attr_dev(button0, "alt", "Login with Twitter");
-    			add_location(button0, file$4, 54, 16, 2025);
-    			attr_dev(i1, "class", "fab fa-github-square fa-2x");
+    			add_location(i0, file$4, 63, 18, 2271);
+    			attr_dev(a0, "href", "/.auth/login/github");
+    			attr_dev(a0, "class", "btn btn-floating btn-sm btn-secondary");
+    			attr_dev(a0, "alt", "Login with Github");
+    			add_location(a0, file$4, 62, 16, 2151);
+    			attr_dev(i1, "class", "fab fa-twitter-square fa-2x");
     			attr_dev(i1, "aria-hidden", "true");
-    			add_location(i1, file$4, 59, 20, 2363);
-    			attr_dev(button1, "type", "button");
-    			attr_dev(button1, "class", "btn btn-floating btn-sm btn-secondary");
-    			attr_dev(button1, "alt", "Login with Github");
-    			add_location(button1, file$4, 58, 16, 2249);
-    			attr_dev(i2, "class", "fab fa-linkedin fa-2x");
+    			add_location(i1, file$4, 67, 20, 2496);
+    			attr_dev(a1, "href", "/.auth/login/twitter");
+    			attr_dev(a1, "class", "btn btn-floating btn-sm btn-secondary");
+    			attr_dev(a1, "alt", "Login with Twitter");
+    			add_location(a1, file$4, 66, 16, 2372);
+    			attr_dev(i2, "class", "fab fa-google fa-2x");
     			attr_dev(i2, "aria-hidden", "true");
-    			add_location(i2, file$4, 62, 20, 2585);
-    			attr_dev(button2, "type", "button");
-    			attr_dev(button2, "class", "btn btn-floating btn-sm btn-secondary");
-    			attr_dev(button2, "alt", "Login with LinkedIn");
-    			add_location(button2, file$4, 61, 16, 2469);
-    			attr_dev(i3, "class", "fab fa-google fa-2x");
+    			add_location(i2, file$4, 72, 20, 2724);
+    			attr_dev(a2, "href", "/.auth/login/google");
+    			attr_dev(a2, "class", "btn btn-floating btn-sm btn-secondary");
+    			attr_dev(a2, "alt", "Login with Google");
+    			add_location(a2, file$4, 71, 16, 2602);
+    			attr_dev(i3, "class", "fab fa-facebook fa-2x");
     			attr_dev(i3, "aria-hidden", "true");
-    			add_location(i3, file$4, 66, 20, 2802);
-    			attr_dev(button3, "type", "button");
-    			attr_dev(button3, "class", "btn btn-floating btn-sm btn-secondary");
-    			attr_dev(button3, "alt", "Login with Google");
-    			add_location(button3, file$4, 65, 16, 2688);
-    			attr_dev(i4, "class", "fab fa-facebook fa-2x");
-    			attr_dev(i4, "aria-hidden", "true");
-    			add_location(i4, file$4, 69, 20, 3017);
-    			attr_dev(button4, "type", "button");
-    			attr_dev(button4, "class", "btn btn-floating btn-sm btn-secondary");
-    			attr_dev(button4, "alt", "Login with Facebook");
-    			add_location(button4, file$4, 68, 16, 2901);
+    			add_location(i3, file$4, 75, 20, 2944);
+    			attr_dev(a3, "href", "/.auth/login/facebook");
+    			attr_dev(a3, "class", "btn btn-floating btn-sm btn-secondary");
+    			attr_dev(a3, "alt", "Login with Facebook");
+    			add_location(a3, file$4, 74, 16, 2818);
     			attr_dev(li, "class", "nav-item");
-    			add_location(li, file$4, 51, 12, 1915);
+    			add_location(li, file$4, 60, 12, 2043);
     			attr_dev(ul, "class", "navbar-nav ml-auto");
-    			add_location(ul, file$4, 50, 8, 1870);
+    			add_location(ul, file$4, 59, 8, 1998);
     			attr_dev(div, "class", "collapse navbar-collapse");
     			attr_dev(div, "id", "navbarSupportedContent");
-    			add_location(div, file$4, 49, 4, 1794);
+    			add_location(div, file$4, 58, 6, 1922);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -2626,20 +2613,17 @@
     			append_dev(ul, li);
     			append_dev(li, span);
     			append_dev(li, t1);
-    			append_dev(li, button0);
-    			append_dev(button0, i0);
+    			append_dev(li, a0);
+    			append_dev(a0, i0);
     			append_dev(li, t2);
-    			append_dev(li, button1);
-    			append_dev(button1, i1);
+    			append_dev(li, a1);
+    			append_dev(a1, i1);
     			append_dev(li, t3);
-    			append_dev(li, button2);
-    			append_dev(button2, i2);
+    			append_dev(li, a2);
+    			append_dev(a2, i2);
     			append_dev(li, t4);
-    			append_dev(li, button3);
-    			append_dev(button3, i3);
-    			append_dev(li, t5);
-    			append_dev(li, button4);
-    			append_dev(button4, i4);
+    			append_dev(li, a3);
+    			append_dev(a3, i3);
     		},
     		p: noop,
     		d: function destroy(detaching) {
@@ -2651,14 +2635,14 @@
     		block,
     		id: create_else_block$1.name,
     		type: "else",
-    		source: "(47:0) {:else}",
+    		source: "(56:4) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (21:0) {#if userInfo}
+    // (30:4) {#if userInfo}
     function create_if_block$1(ctx) {
     	let div2;
     	let ul;
@@ -2702,29 +2686,29 @@
     			attr_dev(a0, "data-toggle", "dropdown");
     			attr_dev(a0, "aria-haspopup", "true");
     			attr_dev(a0, "aria-expanded", "false");
-    			add_location(a0, file$4, 25, 10, 940);
+    			add_location(a0, file$4, 34, 10, 1060);
     			attr_dev(a1, "class", "dropdown-item");
     			attr_dev(a1, "href", "/profile");
-    			add_location(a1, file$4, 38, 12, 1392);
+    			add_location(a1, file$4, 47, 12, 1512);
     			attr_dev(a2, "class", "dropdown-item");
     			attr_dev(a2, "href", "http://aka.ms/staticwebapps");
     			attr_dev(a2, "target", "_blank");
-    			add_location(a2, file$4, 39, 12, 1461);
+    			add_location(a2, file$4, 48, 12, 1581);
     			attr_dev(div0, "class", "dropdown-divider");
-    			add_location(div0, file$4, 40, 12, 1568);
+    			add_location(div0, file$4, 49, 12, 1688);
     			attr_dev(a3, "class", "dropdown-item");
     			attr_dev(a3, "href", "/logout");
-    			add_location(a3, file$4, 41, 12, 1614);
+    			add_location(a3, file$4, 50, 12, 1734);
     			attr_dev(div1, "class", "dropdown-menu dropdown-menu-right animate slideIn");
     			attr_dev(div1, "aria-labelledby", "navbarDropdown");
-    			add_location(div1, file$4, 35, 10, 1256);
+    			add_location(div1, file$4, 44, 10, 1376);
     			attr_dev(li, "class", "nav-item dropdown");
-    			add_location(li, file$4, 24, 8, 898);
+    			add_location(li, file$4, 33, 8, 1018);
     			attr_dev(ul, "class", "navbar-nav ml-auto");
-    			add_location(ul, file$4, 23, 6, 857);
+    			add_location(ul, file$4, 32, 6, 977);
     			attr_dev(div2, "class", "collapse navbar-collapse");
     			attr_dev(div2, "id", "navbarSupportedContent");
-    			add_location(div2, file$4, 22, 4, 783);
+    			add_location(div2, file$4, 31, 6, 903);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div2, anchor);
@@ -2754,7 +2738,7 @@
     		block,
     		id: create_if_block$1.name,
     		type: "if",
-    		source: "(21:0) {#if userInfo}",
+    		source: "(30:4) {#if userInfo}",
     		ctx
     	});
 
@@ -2796,13 +2780,14 @@
     			t3 = space();
     			if_block.c();
     			if (img.src !== (img_src_value = "/img/logo.png")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "alt", "");
-    			add_location(img, file$4, 8, 41, 348);
+    			attr_dev(img, "class", "logo-img svelte-dud7es");
+    			attr_dev(img, "alt", "Logo");
+    			add_location(img, file$4, 15, 6, 424);
     			attr_dev(a, "class", "navbar-brand");
     			attr_dev(a, "href", "/home");
-    			add_location(a, file$4, 8, 4, 311);
+    			add_location(a, file$4, 14, 4, 379);
     			attr_dev(span, "class", "navbar-toggler-icon");
-    			add_location(span, file$4, 17, 6, 657);
+    			add_location(span, file$4, 26, 6, 769);
     			attr_dev(button, "class", "navbar-toggler");
     			attr_dev(button, "type", "button");
     			attr_dev(button, "data-toggle", "collapse");
@@ -2810,11 +2795,11 @@
     			attr_dev(button, "aria-controls", "navbarSupportedContent");
     			attr_dev(button, "aria-expanded", "false");
     			attr_dev(button, "aria-label", "Toggle navigation");
-    			add_location(button, file$4, 9, 4, 402);
+    			add_location(button, file$4, 18, 4, 514);
     			attr_dev(div, "class", "container");
-    			add_location(div, file$4, 7, 2, 282);
-    			attr_dev(nav, "class", "navbar navbar-expand-lg navbar-light bg-light");
-    			add_location(nav, file$4, 6, 0, 219);
+    			add_location(div, file$4, 13, 2, 350);
+    			attr_dev(nav, "class", "navbar navbar-expand-lg navbar-light bg-light p-1");
+    			add_location(nav, file$4, 12, 0, 283);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
