@@ -40,7 +40,7 @@
             data-toggle="dropdown"
             aria-haspopup="true"
             aria-expanded="false">
-            {userInfo.clientPrincipal.userDetails}
+            {userInfo.userDetails}
           </a>
           <div
             class="dropdown-menu dropdown-menu-right animate slideIn"
