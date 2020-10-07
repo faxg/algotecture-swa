@@ -26,7 +26,7 @@
       },
       {
         "route": "/*",
-        "serve": "/home",
+        "serve": "/index.html",
         "statusCode": 200
       }
     ],
