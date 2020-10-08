@@ -10,7 +10,7 @@
   export let url = "";
 
   // when ready, load user profile info
-  let userInfo = undefined; // {clientPrincipal: {userDetails: "Foo"}}
+  let userInfo = undefined; // {userDetails: "Foo"}
   onMount(async () => (userInfo = await getUserInfo()));
 </script>
 
@@ -28,10 +28,11 @@
         </Route>
 
         <Route path="/home" component={Home} />
+
         <Route path="/login" component={Login} />
         <Route path="/profile" component={Profile} {userInfo} />
 
-
+        <Route path="/404-not-found" component={PageNotFound} />
         <Route path="**" component={PageNotFound} />
       </div>
 

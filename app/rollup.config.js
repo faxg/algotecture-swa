@@ -6,7 +6,7 @@ import { terser } from 'rollup-plugin-terser';
 import postcss from 'rollup-plugin-postcss';
 import replace from '@rollup/plugin-replace';
 
-// determine if we run in "production" (e.g. not on locally)
+// determine if we run in "production" (e.g. not  locally)
 const production = !process.env.ROLLUP_WATCH; 
 
 // when running locally (e.g. local dev mode), replace the Functions API endpoint to localhost 
