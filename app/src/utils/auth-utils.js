@@ -2,7 +2,7 @@ export default async function getUserInfo() {
     
     // FIXME: test authentication locally. 
     // We may want to simulate login/logout (cookies?) and different roles
-    if (!process.env.is_prod) {
+    if (!process.env.isProd) {
         return await getUserInfo_local_test()
     }
 
