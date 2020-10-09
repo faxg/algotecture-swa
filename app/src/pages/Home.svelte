@@ -5,6 +5,7 @@
 
 <div class="row">
   <div class="col-12 d-flex justify-content-center">
+      STAGING !!
       <img src="img/dummy-frontpage.png" 
       class="img-fluid"  alt="">
   </div>
